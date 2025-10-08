@@ -3,13 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon premier site</title>
+  <title>Mon premier site amélioré</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bienvenue sur mon site !</h1>
-  <p>Ceci est mon premier site web 🎉</p>
-  <button id="btn">Clique-moi</button>
+  <header>
+    <h1>Mon Site Web 🌐</h1>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <h2>Bienvenue sur mon site !</h2>
+      <p>Ceci est mon premier site web, maintenant avec un style moderne 🎨</p>
+      <button id="btn">Clique-moi</button>
+    </section>
+
+    <section id="apropos">
+      <h3>À propos</h3>
+      <p>Je suis en train d'apprendre à créer des sites web avec Visual Studio Code et GitHub Pages.</p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Tu peux me retrouver sur <a href="#">GitHub</a> ou m’écrire par email 📧</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MonSiteWeb — Créé avec ❤️ et VS Code</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

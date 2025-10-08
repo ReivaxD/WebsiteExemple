@@ -1,5 +1,17 @@
 const bouton = document.getElementById("btn");
+const themeToggle = document.getElementById("theme-toggle");
 
 bouton.addEventListener("click", () => {
-  alert("Bravo ! Tu viens de créer ton premier site 🎉");
+  bouton.textContent = "Bravo 🎉 !";
+  alert("Tu as cliqué sur le bouton !");
+});
+
+// --- GESTION DU MODE SOMBRE ---
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  if (document.body.classList.contains("dark")) {
+    themeToggle.textContent = "☀️";
+  } else {
+    themeToggle.textContent = "🌙";
+  }
 });
