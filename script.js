@@ -15,3 +15,12 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙";
   }
 });
+
+// --- ANIMATION D'ENTRÉE ---
+window.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll("header, .hero, section, footer");
+  elements.forEach((el, index) => {
+    el.classList.add("fade-in");
+    el.style.animationDelay = `${index * 0.3}s`;
+  });
+});
